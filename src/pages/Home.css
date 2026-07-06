@@ -1,0 +1,378 @@
+/* ── Home Page ── */
+.home-page {
+  background: #ffffff;
+}
+
+.home-page .container {
+  max-width: var(--container);
+}
+
+/* Hero Section */
+.home-hero {
+  background: linear-gradient(135deg, #fff9e6 0%, #e8f8f5 50%, #d4f1ed 100%);
+  padding: 60px 0;
+}
+
+.home-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.home-hero-image img {
+  width: 100%;
+  max-width: 491px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.home-hero-content {
+  text-align: center;
+}
+
+.home-hero-content h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--nv-text-color);
+}
+
+.home-hero-content p {
+  font-size: 18px;
+  line-height: 1.6em;
+  color: var(--nv-text-color);
+  margin-bottom: 0;
+}
+
+.home-hero-content a {
+  color: var(--nv-primary-accent);
+  text-decoration: none;
+}
+
+.home-hero-content a:hover {
+  text-decoration: underline;
+}
+
+/* Financial Instruments Section */
+.home-instruments {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.home-instruments-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.home-instruments-image img {
+  width: 100%;
+  max-width: 464px;
+  margin: 0 auto;
+  display: block;
+}
+
+.home-instruments-content h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.home-instruments-content p {
+  font-size: 16px;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.home-instruments-content .btn {
+  margin-top: 10px;
+}
+
+/* Statistics Bar */
+.home-stats {
+  background: var(--nv-primary-accent);
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-stats::before,
+.home-stats::after {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 100%;
+  top: 0;
+  opacity: 0.15;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 8px,
+    rgba(255, 255, 255, 0.3) 8px,
+    rgba(255, 255, 255, 0.3) 10px
+  );
+}
+
+.home-stats::before {
+  left: 0;
+}
+
+.home-stats::after {
+  right: 0;
+}
+
+.home-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.home-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-stat-value {
+  font-size: 64px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.home-stat-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Service Cards Grid */
+.home-services {
+  background: #ffffff;
+}
+
+.home-services-row {
+  display: grid;
+  gap: 0;
+}
+
+.home-services-row-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.home-services-row-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.home-service-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.home-service-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  position: absolute;
+  inset: 0;
+}
+
+.home-service-overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+  min-height: 320px;
+  padding: 32px 20px;
+  background: rgba(116, 116, 116, 0.15);
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.home-service-card-dark .home-service-overlay {
+  background: rgba(116, 116, 116, 0.45);
+}
+
+.home-service-card:hover .home-service-overlay {
+  background: rgba(116, 116, 116, 0.55);
+}
+
+.home-service-overlay h3 {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.3em;
+  max-width: 280px;
+}
+
+.home-service-pill {
+  display: inline-block;
+  background: rgba(40, 44, 52, 0.88);
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 1.55em;
+  padding: 14px 20px;
+  border-radius: 9999px;
+  max-width: 280px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.home-service-pill strong {
+  font-weight: 700;
+}
+
+.home-service-card:hover .home-service-pill {
+  background: rgba(30, 34, 42, 0.95);
+}
+
+/* Financial Consulting Section */
+.home-consulting {
+  background: var(--nv-dark-bg);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-consulting::before,
+.home-consulting::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.15) 2px, transparent 2px);
+  background-size: 12px 12px;
+}
+
+.home-consulting::before {
+  top: 20px;
+  left: 20px;
+}
+
+.home-consulting::after {
+  bottom: 20px;
+  right: 20px;
+}
+
+.home-consulting h2 {
+  color: var(--nv-primary-accent);
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-consulting-desc {
+  color: #ffffff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.home-consulting-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.home-consulting-card {
+  background: #ffffff;
+  padding: 40px 32px;
+  border-radius: 4px;
+}
+
+.home-consulting-number {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--nv-text-color);
+  display: block;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+.home-consulting-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  color: var(--nv-text-color);
+}
+
+.home-consulting-card p {
+  font-size: 16px;
+  line-height: 1.8em;
+  color: var(--nv-text-color);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 959px) {
+  .home-hero-grid,
+  .home-instruments-grid,
+  .home-consulting-cards {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .home-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .home-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .home-services-row-4,
+  .home-services-row-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .home-stat-value {
+    font-size: 48px;
+  }
+
+  .home-instruments {
+    padding: 50px 0;
+  }
+
+  .home-consulting {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero {
+    padding: 40px 0;
+  }
+}

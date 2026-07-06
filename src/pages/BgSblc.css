@@ -1,0 +1,286 @@
+.bgsblc-page {
+  background: #ffffff;
+}
+
+/* Page title section */
+.bgsblc-page-header {
+  background: #f1f1f1;
+  padding-bottom: 0;
+}
+
+.bgsblc-page-header .page-header {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.bgsblc-page-header .page-header h1 {
+  margin-bottom: 0;
+}
+
+/* Hero section */
+.bgsblc-hero {
+  position: relative;
+  background-image: url('/images/bg-sblc-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bgsblc-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(7, 7, 49, 0.88);
+}
+
+.bgsblc-hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 15px;
+}
+
+.bgsblc-hero-title {
+  margin: 0;
+}
+
+.bgsblc-hero-title a {
+  font-size: clamp(32px, 5vw, 70px);
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.bgsblc-hero-title a:hover {
+  color: var(--nv-primary-accent);
+}
+
+/* Financial Instruments card */
+.bgsblc-instruments {
+  background-image: url('/images/bg-sblc-instruments-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0 80px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 2;
+}
+
+.bgsblc-instruments-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: #f1f1f1;
+  padding: 40px;
+  max-width: 100%;
+}
+
+.bgsblc-instruments-text .bgsblc-label {
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+
+.bgsblc-instruments-text .bgsblc-label a {
+  color: var(--nv-primary-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bgsblc-instruments-text .bgsblc-label a:hover {
+  text-decoration: underline;
+}
+
+.bgsblc-instruments-text h2 {
+  font-size: clamp(32px, 4vw, 50px);
+  font-weight: 700;
+  color: #070731;
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+.bgsblc-instruments-text p {
+  color: #070731;
+  font-size: 16px;
+  line-height: 1.6em;
+  margin-bottom: 16px;
+}
+
+.bgsblc-instruments-text p:last-child {
+  margin-bottom: 0;
+}
+
+.bgsblc-instruments-text a {
+  color: #070731;
+  text-decoration: underline;
+}
+
+.bgsblc-instruments-text a:hover {
+  color: var(--nv-primary-accent);
+}
+
+.bgsblc-instruments-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Services section */
+.bgsblc-services {
+  padding: 60px 0 80px;
+  background: #ffffff;
+}
+
+.bgsblc-services-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.bgsblc-services-heading {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--nv-text-color);
+  margin: 0 0 20px;
+  letter-spacing: 0.5px;
+}
+
+.bgsblc-services-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bgsblc-services-list li {
+  margin-bottom: 12px;
+}
+
+.bgsblc-services-list a {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--nv-text-color);
+  text-decoration: none;
+}
+
+.bgsblc-services-list a.underline,
+.bgsblc-services-list a:hover {
+  text-decoration: underline;
+}
+
+.bgsblc-services-list a:hover {
+  color: var(--nv-primary-accent);
+}
+
+/* Accordion */
+.bgsblc-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bgsblc-accordion-item {
+  background: #f1f1f1;
+  border: 1px solid #e0e0e0;
+}
+
+.bgsblc-accordion-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  gap: 16px;
+}
+
+.bgsblc-accordion-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--nv-text-color);
+  text-decoration: none;
+}
+
+.bgsblc-accordion-item.is-open .bgsblc-accordion-title {
+  color: var(--nv-primary-accent);
+}
+
+.bgsblc-accordion-title:hover {
+  color: var(--nv-primary-accent);
+}
+
+.bgsblc-accordion-icon {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  color: var(--nv-text-color);
+}
+
+.bgsblc-accordion-item.is-open .bgsblc-accordion-icon {
+  transform: rotate(225deg);
+  color: var(--nv-primary-accent);
+}
+
+.bgsblc-accordion-body {
+  padding: 0 24px 18px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.bgsblc-accordion-body p {
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--nv-text-color);
+  margin: 16px 0 0;
+}
+
+.bgsblc-accordion-body p:last-child {
+  margin-bottom: 0;
+}
+
+.bgsblc-accordion-body a {
+  color: var(--nv-text-color);
+  text-decoration: underline;
+}
+
+.bgsblc-accordion-body a:hover {
+  color: var(--nv-primary-accent);
+}
+
+@media (max-width: 959px) {
+  .bgsblc-instruments-card {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  .bgsblc-services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .bgsblc-hero {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 575px) {
+  .bgsblc-instruments {
+    padding: 40px 0 60px;
+    margin-top: 0;
+  }
+
+  .bgsblc-services-list a {
+    font-size: 18px;
+  }
+}
