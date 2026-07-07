@@ -1,4 +1,5 @@
 import { xauHome } from './xauPlatformContent'
+import { publicUrl } from '../utils/publicUrl'
 
 export const hero = {
   title: xauHome.hero.headline,
@@ -21,16 +22,16 @@ export const stats = xauHome.platformStats.map((item) => ({
   label: item.label.toUpperCase(),
 }))
 
-export const heroImage = '/images/capital-development.png'
-export const instrumentsImage = '/images/land-capital.png'
+export const heroImage = publicUrl('/images/capital-development.png')
+export const instrumentsImage = publicUrl('/images/land-capital.png')
 
 const serviceImages = [
-  '/images/services/global-projects.png',
-  '/images/services/gold-engine.png',
-  '/images/capital-development.png',
-  '/images/services/treasury-banking.png',
-  '/images/services/vip-services.png',
-  '/images/services/multi-currency.png',
+  publicUrl('/images/services/global-projects.png'),
+  publicUrl('/images/services/gold-engine.png'),
+  publicUrl('/images/capital-development.png'),
+  publicUrl('/images/services/treasury-banking.png'),
+  publicUrl('/images/services/vip-services.png'),
+  publicUrl('/images/services/multi-currency.png'),
 ]
 
 export const serviceCards = [
@@ -44,7 +45,7 @@ export const serviceCards = [
   {
     title: 'Multi-Billion Projects',
     description: xauHome.projects.map((p) => `${p.name} — ${p.value}`).join('. '),
-    image: '/images/land-capital.png',
+    image: publicUrl('/images/land-capital.png'),
     link: '/home',
     darker: true,
   },

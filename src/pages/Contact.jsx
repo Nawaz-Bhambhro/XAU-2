@@ -1,6 +1,7 @@
 import PageHeader from '../components/PageHeader'
 import { Link } from 'react-router-dom'
 import { contactInfo, contactCta, mapEmbedUrl } from '../data/contact'
+import { publicUrl } from '../utils/publicUrl'
 import './Contact.css'
 
 function Contact() {
@@ -28,7 +29,7 @@ function Contact() {
         <div className="container contact-main-grid">
           <div className="contact-info-card">
             <img
-              src="/images/contact-office.png"
+              src={publicUrl('/images/contact-office.png')}
               alt="Chiron Projects B.V office building"
               className="contact-office-image"
             />

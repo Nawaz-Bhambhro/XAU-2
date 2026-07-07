@@ -1,4 +1,5 @@
 import { xauHome, xauLandCapital, xauSystemFull, xauCapitalPortal } from './xauPlatformContent'
+import { publicUrl } from '../utils/publicUrl'
 
 export const servicePages = [
   {
@@ -18,7 +19,7 @@ export const servicePages = [
     title: xauCapitalPortal.brand,
     description: xauCapitalPortal.platformTitle,
     points: xauCapitalPortal.features,
-    image: '/images/capital-development.png',
+    image: publicUrl('/images/capital-development.png'),
   },
   {
     path: '/trade-finance',
@@ -31,7 +32,7 @@ export const servicePages = [
     title: xauLandCapital.headline,
     description: xauLandCapital.intro,
     points: xauLandCapital.valueBox.checklist,
-    image: '/images/land-capital.png',
+    image: publicUrl('/images/land-capital.png'),
   },
   {
     path: '/finance-consulting',

@@ -6,17 +6,23 @@ import {
   accordionItems,
   instrumentsContent,
 } from '../data/bgSblc'
+import { publicUrl } from '../utils/publicUrl'
 import './BgSblc.css'
 
 function BgSblc() {
   const [openAccordion, setOpenAccordion] = useState('performance-sblc')
+
+  const pageStyle = {
+    '--bgsblc-hero-bg': `url(${publicUrl('/images/bg-sblc-hero.jpg')})`,
+    '--bgsblc-instruments-bg': `url(${publicUrl('/images/bg-sblc-instruments-bg.png')})`,
+  }
 
   const toggleAccordion = (id) => {
     setOpenAccordion((prev) => (prev === id ? null : id))
   }
 
   return (
-    <main className="bgsblc-page">
+    <main className="bgsblc-page" style={pageStyle}>
       <div className="bgsblc-page-header">
         <div className="container">
           <PageHeader
@@ -61,7 +67,7 @@ function BgSblc() {
             </div>
             <div className="bgsblc-instruments-image">
               <img
-                src="/images/business-handshake.jpg"
+                src={publicUrl('/images/business-handshake.jpg')}
                 alt="Business handshake agreement"
               />
             </div>

@@ -20,7 +20,7 @@
 /* Hero section */
 .bgsblc-hero {
   position: relative;
-  background-image: url('/images/bg-sblc-hero.jpg');
+  background-image: var(--bgsblc-hero-bg);
   background-size: cover;
   background-position: center;
   min-height: 280px;
@@ -60,7 +60,7 @@
 
 /* Financial Instruments card */
 .bgsblc-instruments {
-  background-image: url('/images/bg-sblc-instruments-bg.png');
+  background-image: var(--bgsblc-instruments-bg);
   background-size: cover;
   background-position: center;
   padding: 60px 0 80px;

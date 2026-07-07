@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { footerServices, socialLinks } from '../data/articles'
 import { xauBrand } from '../data/xauPlatformContent'
+import { publicUrl } from '../utils/publicUrl'
 
 const SocialIcon = ({ icon }) => {
   const icons = {
@@ -56,7 +57,7 @@ function Footer() {
           <div className="footer-col footer-brand">
             <Link to="/home">
               <img
-                src="/images/xau-crest-logo.png"
+                src={publicUrl('/images/xau-crest-logo.png')}
                 alt={xauBrand.name}
                 className="footer-logo footer-logo-crest"
               />

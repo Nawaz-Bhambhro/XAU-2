@@ -1,7 +1,9 @@
+import { publicUrl } from '../utils/publicUrl'
+
 export const featuredArticle = {
   title: 'Integrated Refinery & Energy Logistics Solutions for Global Fuel Supply',
   link: '/financial-insights',
-  image: '/images/industrial-refinery.webp',
+  image: publicUrl('/images/industrial-refinery.webp'),
   imageAlt:
     'Connecting buyers with trusted refinery networks, competitive petroleum pricing, and secure worldwide delivery solutions.',
   categories: [
@@ -17,7 +19,7 @@ export const articles = [
   {
     title: 'Wat is een Private Placement Program (PPP)?',
     link: '/financial-insights',
-    image: '/images/private-placement.webp',
+    image: publicUrl('/images/private-placement.webp'),
     imageAlt: 'Private Placement Program',
     categories: [
       { name: 'BG - Bank Guarantee', href: '/bg-sblc' },
@@ -33,7 +35,7 @@ export const articles = [
   {
     title: 'What are the Benefits of a Shipping Guarantee and Air Waybill Endorsement?',
     link: '/financial-insights',
-    image: '/images/golden-hour-logistics.webp',
+    image: publicUrl('/images/golden-hour-logistics.webp'),
     imageAlt:
       'Global shipping and air freight logistics supporting faster cargo release, improved cash flow, and international trade operations.',
     categories: [
@@ -51,7 +53,7 @@ export const articles = [
   {
     title: 'Performance Bonds vs Bank Guarantees: A Complete Guide 2026',
     link: '/financial-insights',
-    image: '/images/global-partnership.webp',
+    image: publicUrl('/images/global-partnership.webp'),
     imageAlt:
       'Performance bonds and bank guarantees supporting global trade, infrastructure projects, and financial security.',
     categories: [
@@ -68,7 +70,7 @@ export const articles = [
   {
     title: '将BG和SBLC转化为可用于贸易的资本：实用框架',
     link: '/financial-insights',
-    image: '/images/business-meeting.png',
+    image: publicUrl('/images/business-meeting.png'),
     imageAlt:
       'Chinese and international finance professionals reviewing trade finance documents with the Shanghai skyline and port in the background.',
     categories: [
@@ -86,7 +88,7 @@ export const articles = [
   {
     title: 'Chiron Projects BV: Boost Your Import-Export Business with Trade Finance Solutions',
     link: '/financial-insights',
-    image: '/images/chironprojectsbv.webp',
+    image: publicUrl('/images/chironprojectsbv.webp'),
     imageAlt:
       'Cargo ships at international port with containers and trade finance document representing import export financing and global trade operations',
     categories: [

@@ -2,6 +2,8 @@
 
 XAU Global website — Capital Development Systems. React + Vite application.
 
+**Live site:** https://nawaz-bhambhro.github.io/XAU-2/
+
 ## Setup
 
 ```bash

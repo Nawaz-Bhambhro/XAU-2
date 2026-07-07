@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { navLinks } from '../data/articles'
 import { languages, defaultLanguage } from '../data/languages'
 import { xauBrand } from '../data/xauPlatformContent'
+import { publicUrl } from '../utils/publicUrl'
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -35,7 +36,7 @@ function Header() {
           <Link to="/home" className="brand" aria-label={xauBrand.fullName} onClick={closeMenu}>
             <div className="title-with-logo">
               <img
-                src="/images/xau-crest-logo.png"
+                src={publicUrl('/images/xau-crest-logo.png')}
                 alt={xauBrand.name}
                 className="logo-img logo-img-crest"
               />
@@ -80,7 +81,7 @@ function Header() {
                 aria-haspopup="listbox"
               >
                 <img
-                  src={`/images/flags/${selectedLang.code}.svg`}
+                  src={publicUrl(`/images/flags/${selectedLang.code}.svg`)}
                   width="16"
                   height="16"
                   alt={selectedLang.label}
@@ -99,7 +100,7 @@ function Header() {
                         onClick={() => selectLanguage(lang)}
                       >
                         <img
-                          src={`/images/flags/${lang.code}.svg`}
+                          src={publicUrl(`/images/flags/${lang.code}.svg`)}
                           width="16"
                           height="16"
                           alt=""
